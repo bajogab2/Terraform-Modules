@@ -69,3 +69,9 @@ module "ecs" {
   ecs_security_group_id        = module.security_group.ecs_security_group_id
   alb_target_group_arn         = module.application_load_balancer.alb_target_group_arn
 }
+
+module "asg" {
+  source             = "../modules/ASG"
+  ecs_cluster_name   = module.ecs.ecs_cluster_name
+  ecs_service_name   = module.ecs.ecs_service_name
+}
