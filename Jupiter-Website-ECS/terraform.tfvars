@@ -10,3 +10,4 @@
   domain_name = "bajogab2.com"
   alternative_name = "*.bajogab2.com"
   container_image = "904889432658.dkr.ecr.us-east-1.amazonaws.com/jupiter"
+  record_name = "www"
